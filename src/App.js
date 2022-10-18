@@ -25,6 +25,11 @@ function App() {
   return (
     <div className="App">
       <button onClick={handleGoogleSignIn}>Google Sign In</button>
+      <div>
+        <h3>User Name: {user.displayName}</h3>
+        <p>Email Address: {user.email}</p>
+        <img src={user.photoURL} alt="" />
+      </div>
     </div>
   );
 }
